@@ -1,0 +1,61 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav ucleft uccenter ucright"
+    "nav middle middle middle"
+    "nav lc2 lc2 lc2"
+    "footer footer footer footer";
+  grid-template-rows: 50px 50px 30px 30px 30px;
+  grid-template-columns: 50px 50px 150px 100px;
+  gap: 0.2rem;
+}
+.header {
+  background-color: #f31f7c;
+  grid-area: header;
+}
+.ucleft {
+  background-color: #38b255;
+  grid-area: ucleft;
+}
+.uccenter {
+  background-color: #b889e9;
+  grid-area: uccenter;
+}
+.ucright {
+  background-color: #c1f45f;
+  grid-area: ucright;
+}
+.nav {
+  background-color: #1a9ec4;
+  grid-area: nav;
+}
+.middle {
+  background-color: #b80d84;
+  grid-area: middle;
+}
+.lc2 {
+  background-color: #5ddd9e;
+  grid-area: lc2;
+}
+.footer {
+  background-color: #5ddd9e;
+  grid-area: footer;
+}
+.header,
+.ucleft,
+.uccenter,
+.ucright,
+.nav,
+.middle,
+.lc2,
+.footer {
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
