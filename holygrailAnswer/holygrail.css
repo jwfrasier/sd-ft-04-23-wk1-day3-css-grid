@@ -5,6 +5,7 @@ body {
 
 .grid-container {
   display: grid;
+
   grid-template-areas:
     "header header header header"
     "nav ucleft uccenter ucright"
